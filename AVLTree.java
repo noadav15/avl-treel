@@ -6,7 +6,7 @@
  * distinct integer keys and info
  *
  */
-/** shalom **/s
+
 public class AVLTree {
 
 	/**
