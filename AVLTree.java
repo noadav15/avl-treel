@@ -6,9 +6,14 @@
  * distinct integer keys and info
  *
  */
-/** shalom **/s
-public class AVLTree {
 
+public class AVLTree {
+	
+	IAVLNode root;
+	
+	public AVLTree () {
+		this.root = null;
+	}
 	/**
 	 * public boolean empty()
 	 *
@@ -180,6 +185,25 @@ public class AVLTree {
 	 * (It must implement IAVLNode)
 	 */
 	public class AVLNode implements IAVLNode{
+		
+		AVLNode parent;
+		AVLNode left_child;
+		AVLNode right_child;
+		String value;
+		int key;
+		int size;
+		int height;
+		
+		public AVLNode (int key, String value) {
+			this.parent= null;
+			this.left_child=null;
+			this.right_child= null;
+			this.size=1;
+			this.height =0;
+			this.key=key;
+			this.value=value;
+		}
+		
 		public int getKey()
 		{
 			return 42; // to be replaced by student code
