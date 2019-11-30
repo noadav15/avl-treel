@@ -6,11 +6,7 @@
  * distinct integer keys and info
  *
  */
-<<<<<<< HEAD
-//baf
-=======
-//bla
->>>>>>> noa
+
 public class AVLTree {
 
 	/**
